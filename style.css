@@ -252,38 +252,11 @@ section { padding: 100px 0; }
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
 
-/* --- BRAND NEW MOBILE RESPONSIVE FIXES --- */
-@media (max-width: 992px) {
-    /* 1. Fix the huge white space in the Hero section */
-    .hero { 
-        min-height: auto; 
-        padding: 150px 0 60px 0; 
-    }
-    
-    /* 2. Reduce massive gaps between all other sections */
-    section { 
-        padding: 60px 0; 
-    }
-    
-    /* 3. Adjust text sizes for smaller screens */
-    .hero h1 { font-size: 3rem; margin-top: 10px; }
-    .hero h2 { font-size: 1.5rem; }
-    
-    /* 4. Stack the buttons neatly so they don't look cramped */
-    .hero div > a.btn {
-        display: block;
-        width: 100%;
-        max-width: 280px;
-        margin: 15px auto;
-    }
-    .btn-outline { margin-left: auto; }
-
-    /* 5. Force hide the floating sidebar on mobile */
-    .social-sidebar { display: none !important; }
-    
-    /* 6. Standard grid and nav fixes */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 3rem; }
     .about-grid { grid-template-columns: 1fr; }
+    .social-sidebar { display: none; }
     .nav-links { display: none; }
-    .marquee-text { font-size: 2.5rem; }
+    .marquee-text { font-size: 3rem; }
     .hidden { transform: translateY(30px); }
 }
