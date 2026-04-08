@@ -222,7 +222,7 @@
 
         /* --- CONTACT --- */
         .contact-form { max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid var(--border-color); box-shadow: var(--shadow); transition: background 0.3s; }
-        .input-group { margin-bottom: 20px; }
+        .input-group { margin-bottom: 20px; text-align: left; }
         .input-group label { display: block; margin-bottom: 10px; color: var(--text-muted); }
         .input-group input, .input-group textarea { width: 100%; background: var(--bg-color); border: 1px solid var(--border-color); padding: 15px; border-radius: 10px; color: var(--text-main); outline: none; transition: 0.3s; }
         .input-group input:focus, .input-group textarea:focus { border-color: var(--primary); }
@@ -297,7 +297,7 @@
 
     <div class="social-sidebar">
         <a href="https://linkedin.com/in/thebilalnajeeb" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:ibilalnajeeb@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://t.me/thebilalnajeeb" target="_blank"><i class="fa-brands fa-telegram"></i></a>
         <a href="#"><i class="fa-brands fa-github"></i></a>
         <div class="social-line"></div>
     </div>
@@ -314,7 +314,7 @@
                 I utilize my background in project planning, surveying, and management to build data-driven solutions.
             </p>
             <div>
-                <a href="CV Bilal Najeeb (Resume).pdf" class="btn btn-primary" download>Download CV <i class="fa-solid fa-download"></i></a>
+                <a href="#" class="btn btn-primary" download>Download CV <i class="fa-solid fa-download"></i></a>
                 <a href="#about" class="btn btn-outline">About Me <i class="fa-solid fa-user"></i></a>
             </div>
         </div>
@@ -366,9 +366,8 @@
             <h2 class="section-title hidden">Technical <span class="gradient-text">Proficiency</span></h2>
             
             <div class="tabs hidden">
-                <button class="tab-btn active" onclick="openTab('ds')">Data Science</button>
-                <button class="tab-btn" onclick="openTab('eng')">Engineering</button>
-                <button class="tab-btn" onclick="openTab('tools')">Tools</button>
+                <button class="tab-btn active" onclick="openTab(event, 'ds')">Data Science</button>
+                <button class="tab-btn" onclick="openTab(event, 'eng')">Engineering</button>
             </div>
 
             <div class="skills-grid active" id="ds">
@@ -407,4 +406,6 @@
                 </div>
                 <div class="skill-card hidden delay-200">
                     <i class="fa-solid fa-map-location-dot"></i>
-                   
+                    <h3>Surveying</h3>
+                    <p>Advanced</p>
+        
